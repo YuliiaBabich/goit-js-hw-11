@@ -1,7 +1,7 @@
 {
   "name": "parcel-project-template",
   "version": "2.0.0",
-  "description": "", 
+  "description": "",
   "homepage": "https://YuliiaBabich.github.io/goit-js-hw-11",
   "scripts": {
     "start": "parcel src/*.html",
@@ -18,7 +18,11 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "axios": "^1.6.2",
+    "bootstrap-icons": "^1.11.1",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.6",
+    "simplelightbox": "^2.14.2"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
