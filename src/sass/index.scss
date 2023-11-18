@@ -121,22 +121,22 @@ p {
     display: flex;
     align-items: center;   
   justify-content: center;
-  // justify-content: start;
-//justify-content: space-around;
-//justify-content: space-evenly;
-//justify-content: space-between;
+ //justify-content: space-between;
     padding: 20px 0 20px 0;
     background: linear-gradient(315deg,
-            rgba(101, 0, 94, 0.7) 3%,
-            rgba(60, 132, 206, 0.7) 38%,
-            rgba(48, 238, 226, 0.7) 68%,
-            rgba(255, 25, 25, 0.7) 98%);
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+            #65005e 3%,
+            #b2f890 38%,
+            #30eee2 68%,
+            #f685e8 98%);
+    box-shadow: 0px 3px 5px 0px #000000;
 }
 
 .search-form-logo {
     margin-right: 20px;
     padding-right: 150px;
+    opacity: 0.5;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
    }
 .search-form-input {
     width: 50%;
@@ -145,8 +145,8 @@ p {
     font-size: 16px;
     outline: none;
     border: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
 
     &::placeholder {
         font-size: 16px;
@@ -171,7 +171,7 @@ p {
 
     &:hover,
     &:focus {
-        background-color: rgb(116, 203, 148);
+        background-color: #74cb94;
     }
 }
 
@@ -179,4 +179,76 @@ p {
     margin-right: 10px;
 }
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px;
+    padding-top: 100px;
+}
 
+.photo-card {
+    width: calc(100% / 3 - 10px * 2);
+    margin: 10px;
+    box-shadow: 0px 0px 5px 2px #000438;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #74cb94;
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 0px 10px 5px #ffffff;
+    }
+}
+
+.photo-img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.end-collection-text {
+    margin: 30px 0 30px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    &.is-hidden {
+        display: none;
+    }
+}
+.load-more {
+    width: 160px;
+    height: 40px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black;
+    background-color: #d1c3c3;
+    &:hover,
+    &:focus {
+        color: black;
+        background-color: #74cb94;
+    }
+    &.is-hidden {
+        display: none;
+    }
+}
